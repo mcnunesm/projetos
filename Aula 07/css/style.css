@@ -14,6 +14,8 @@ Regras hierarquia para css
     text-align: justify;
 }*/
 
+
+
 body {
     margin-left: 500px;
     margin-right: 500px;
@@ -65,6 +67,13 @@ h2 {
 
 #high {
     color: rgb(51,51,51);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#cursos {
+    color: rgb(51,51,51);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 
 ul {
@@ -94,10 +103,18 @@ footer {
     background-color: #2a7a92;
     color: white;
     padding: 5px 10px 5px 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    margin-left: 415px;
-    margin-right: 415px;
+    font-family: 'Silkscreen', cursive;
+    font-size: 14px;
+    margin: 1% 44%;
+    text-align: center;
 }
 
+.info {
+    background-color: #2a7a92;
+    color: rgb(223,215,185  );
+    padding: 10px;
+    font-size: 14px;
+    margin: 20px 260px;
+    text-align: center;
+}
 
