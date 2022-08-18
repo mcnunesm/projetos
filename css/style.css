@@ -1,0 +1,97 @@
+/*
+Para class utilizar o . antes de defini-la
+Para id utilizar # antes (é único, nao pode se repetir para outros elementos)
+Regras hierarquia para css
+
+
+*/
+
+/* body {
+    height: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+    align-items: center;
+    text-align: justify;
+}*/
+
+
+
+body {
+    
+    text-align: justify;
+    background-color: rgb(223, 215, 185);
+    color: rgb(51, 51, 51);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+    height: 800px;
+    margin:auto;
+    
+
+}
+
+.anitta {
+    position: relative;
+    left: 300px;    
+    top: 50px;
+}
+
+.icones {
+    position: relative;
+    left: 300px;    
+    top: 50px;
+    width: 80px;
+}
+
+h1 {
+    color: rgb(51, 51, 51);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+.job-title {
+    background-color: #2a7a92;
+    color: rgb(223,215,185  );
+    font-size: 20px;
+    font-weight: bold;  
+    padding: 5px 10px;
+}
+
+#high {
+    color: rgb(51,51,51);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#cursos {
+    color: rgb(51,51,51);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    background-color: #359ebebd;
+    color: rgb(223, 215, 185);
+    padding: 10px;
+}
+
+
+.voltar {
+    background-color: #2a7a92;
+    color: white;
+    font-family: 'Silkscreen', cursive;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.info {
+    background-color: #2a7a92;
+    color: rgb(223,215,185  );
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+}
+
