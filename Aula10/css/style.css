@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    Font-family: 'Roboto', sans-serif;
+}
+
+.faixa-superior {
+background-color: #1CD1B0;
+padding: 5px;
+}
+
+.titulo {
+    
+    background-color: #00669F;
+    font-size: 40px;
+    padding: 28px;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.caverna, .cores {
+    margin: 20px 10px 0 10px;
+}
+
+
+.batman, .arlequina {
+    display: flex;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    
+}
+
+.icon1 {
+    position: absolute;
+    left: 33%;
+    top: 21%;
+}
+
+.icon2 {
+    position: absolute;
+    left: 52%;
+    top: 21%;
+}
+
+.arlequina {
+    
+    left: 1080px;
+    top: 300px;
+}
+
+.batman {
+    left: 700px;
+    top: 300px;
+}
+
+.texto-card {
+    margin: 0 10px;
+    padding: 80px 20px;
+    background-color: #f3f3f3;
+    width: 374px;
+    height: 379px;
+    text-align: center;
+    font-size: 15px;
+}
+g
+.botao-card {
+    display: inline-block;
+    padding: 15px 15px;
+    background-color: #00669F;
+    margin-top: 110px;
+    color: white;
+}
+
+.voltar {
+    
+    display: flex;
+    justify-content: center;
+    padding: 50px 15px;
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    position: inherit;
+    background-color: #00669F;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
