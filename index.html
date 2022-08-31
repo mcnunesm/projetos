@@ -1,51 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-  <head>
-    <meta charset="utf-8">
-    <title>Projetinhos de Aula</title>
-    <link rel="stylesheet" href="./css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Silkscreen&display=swap" rel="stylesheet">
-  </head>
-
-  <body>
-    <div class="conteudo">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>MariaNunes Portfólio</title>
+</head>
+<body>
     <header>
-      <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-128.png" alt="Ícone HTML" class="icones">
-      <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-128.png" alt="Ícone CSS" class="icones">
-      <h1>Projetos</h1>
-      <h5>Maria Clara Nunes</h5>
-      <div class="job-title">Projetos desenvolvidos durante os cursos</div>
+       <div id="menu">
+            <h1 class="inicio">Hi 👋,</h1>
+                <p class="autor">I'm Maria Clara Nunes</p>
+       
+
+            <img src="./img/foto-perfil.jpeg" alt="Foto Maria Clara" class="foto-perfil">
+            <p class="perfil">I'm a Dev student and these are some of the projects that I have developed</p>
+        </div>
+        
+        <div class="contatos">
+                <a href="mailto:marianunesm@hotmail.com"><img src="./img/mail-icon.png" alt="Ícone de e-mail" title="marianunesm@hotmail.com"></a>
+                <a href="https://github.com/mcnunesm" target="_blank"><img src="./img/github-icon.png" alt="Ícone do GitHub" title="@mcnunesm"></a>
+                <a href="mailto:marianunesm@hotmail.com" target="_blank"><img src="./img/linkedin-icon.png" alt="Ícone do Linkedin" title="Maria Clara Nunes"></a>
+        </div>
     </header>
 
     <main>
-        <ul>
-            <li><a href="./front-end/Aula06/aula06.html">Tags HTML</a></li>
-            <li><a href="./front-end/Aula07/aula07.html">Tags HTML + CSS</a></li>
-            <li><a href="./front-end/Aula08/aula08.html">Propriedades CSS</a></li>
-            <li><a href="./front-end/Aula10/aula10.html">Estrutura a partir de um wireframe</a></li>
-          
-        </ul>
-      
+        <div class="titulo-sessao">
+            <h1>Projetos</h1>
+        </div>
+        <div id="projetos">
+            <section>
+                <h1 class="titulo-projeto">HTML+CSS</h1>
+                <a href="https://mcnunesm.github.io/projetos/front-end/Aula08/aula08.html"><img src="./img/projeto1.png" alt="Print do projeto" class="foto-projeto"></a>
+                <p class="sobre-projeto">Review de um filme HTML + CSS - aula Front End CTD.</p>
+            </section>
+            <section>
+                <h1 class="titulo-projeto">HTML+CSS</h1>
+                <a href="https://mcnunesm.github.io/projetos/front-end/Aula10/aula10.html"><img src="./img/projeto2.png" alt="Print do projeto" class="foto-projeto"></a>
+                <p class="sobre-projeto">Super heróis HTML + CSS - aula Front End CTD.</p>
+            </section>
+            <section>
+                <h1 class="titulo-projeto">HTML+CSS (em construção)</h1>
+                <img src="./img/projeto3.png" alt="Print do projeto" class="foto-projeto">
+                <p class="sobre-projeto">Mortal Kombat curiosidades HTML + CSS - aula Front End CTD.</p>
+            </section>
+        </div>
 
-      <h2 id="high">Cursos desenvolvidos e em desenvolvimento:</h2>
-
-    <div id="cursos">
-      <p>• <a href="https://www.digitalhouse.com/br/produtos/programacao/certified-tech-developer">Certified Tech Developer</a> in <a href="https://www.digitalhouse.com/br">Digital House</a> <em>em formação</em></p>
-      <p>• Trilha <a href="./arquivos/discover-conectar-certificate.pdf" target="_blank">Conectar</a> do Discover in <a href="https://www.rocketseat.com.br/">Rocketseat</a></p>
-      <p>• Trilha Fundamentar do Discover in <a href="https://www.rocketseat.com.br/">Rocketseat</a> <em>em formação</em></p>
-    </div>
+        <div class="titulo-sessao">
+            <h1>Formação</h1>
+        </div>
+        <div class="cursos">
+            <section>
+                <h1 class="titulo-curso">Certified Tech Developer</h1>
+                <p class="sobre-curso">in <a href="https://www.digitalhouse.com/br">Digital House</a> <em>em formação</em>.</p>
+                <img src="./img/logo-ctd.png" alt="Logo Digital House">
+            </section>
+            <section>
+                <h1 class="titulo-curso"><a href="https://mcnunesm.github.io/projetos/arquivos/discover-conectar-certificate.pdf">Trilha Conectar</a></h1>
+                <p class="sobre-curso">do Discover in <a href="https://www.rocketseat.com.br/">Rocketseat</a>.</p>
+                <img src="./img/logo_rocketseat.png" alt="Logo Rocketseat">
+            </section>
+            <section>
+                <h1 class="titulo-curso">Trilha Fundamentar</h1>
+                <p class="sobre-curso">do Discover in <a href="https://www.rocketseat.com.br/">Rocketseat</a> <em>em formação</em>.</p>
+                <img src="./img/logo_rocketseat.png" alt="Logo Rocketseat">
+            </section>
+        </div>
     </main>
 
     <footer>
-    <div class="info">
-        contatos: <a href="mailto:marianunesm@hotmail.com">marianunesm@hotmail.com</a>  || <a href="https://github.com/mcnunesm">git hub</a>
+        <div class="contatos">
+            <a href="mailto:marianunesm@hotmail.com"><img src="./img/mail-icon.png" alt="Ícone de e-mail" title="marianunesm@hotmail.com"></a>
+            <a href="https://github.com/mcnunesm" target="_blank"><img src="./img/github-icon.png" alt="Ícone do GitHub" title="@mcnunesm"></a>
+            <a href="mailto:marianunesm@hotmail.com" target="_blank"><img src="./img/linkedin-icon.png" alt="Ícone do Linkedin" title="Maria Clara Nunes"></a>
     </div>
-      <p class="voltar"><a href="../index.html">HOME</a></p>
-    </footer>
-
-  </body>
-
+        </footer>
+    
+    
+</body>
 </html>

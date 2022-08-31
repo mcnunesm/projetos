@@ -41,24 +41,23 @@ padding: 5px;
 
 .icon1 {
     position: absolute;
-    left: 33%;
-    top: 21%;
+    left: 25%;
+    top: 25%;
 }
 
 .icon2 {
     position: absolute;
     left: 52%;
-    top: 21%;
+    top: 25%;
 }
 
 .arlequina {
-    
-    left: 1080px;
+    left: 58%;
     top: 300px;
 }
 
 .batman {
-    left: 700px;
+    left: 31%;
     top: 300px;
 }
 
@@ -71,12 +70,12 @@ padding: 5px;
     text-align: center;
     font-size: 15px;
 }
-g
+
 .botao-card {
     display: inline-block;
     padding: 15px 15px;
     background-color: #00669F;
-    margin-top: 110px;
+    margin-top: 70px;
     color: white;
 }
 
