@@ -93,6 +93,11 @@ text-decoration-line: overline;
         flex-direction: column;
         align-items: center;
     }
+
+    .cursos {
+        flex-direction: column;
+        align-items: center;
+    }
     
 }
 
