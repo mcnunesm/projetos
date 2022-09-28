@@ -126,7 +126,9 @@ text-decoration-line: overline;
 .cursos {
     display: flex;
     justify-content: center;
+    flex-flow: wrap row;
     gap: 20px;
+    margin: 30px;
 }
 
 .cursos section {
@@ -144,11 +146,15 @@ text-decoration-line: overline;
     font-size: 15px;
 }
 
-.cursos img {
+.logo-dh, .logo-rocketseat, .logo-coursera  {
     width: 200px;
     padding: 10px;
 }
 
 footer img {
     margin-top: 30px;
+}
+
+.logo-xp {
+    width: 100px;
 }
