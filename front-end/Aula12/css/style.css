@@ -3,20 +3,31 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
     background-color: #ffffff;
-    position: fixed;
-    z-index: 10;
     width: 100%;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
 }
 
-html,
-body {
+html {
     overflow-x: hidden;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    
+}
+
+body {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+    
 }
 
 input:active {
@@ -25,10 +36,14 @@ input:active {
 
 main {
     display: block;
-  }
+}
 
 .home {
     color: #E51B3E;
+}
+
+.filme {
+    border-radius: 15px;
 }
 
 a:link {
@@ -39,19 +54,19 @@ a:link {
 a:visited {
     text-decoration: none;
     color: inherit;
-} 
+}
 
 li:hover {
     text-decoration: none;
-     border-radius: 10px;
+    border-radius: 10px;
     -moz-transform: scale(1.3);
     -webkit-transform: scale(1.3);
-    transform: scale(1.4); 
-  }
+    transform: scale(1.2);
+}
 
 .botao {
     visibility: hidden;
-    margin-left: 80px; 
+    margin-left: 80px;
 }
 
 .lista-menu {
@@ -59,8 +74,8 @@ li:hover {
     justify-content: center;
     list-style: none;
     gap: 30px;
-    font-size: 19px; 
-    color: #171717;     
+    font-size: 19px;
+    color: #171717;
 }
 
 .menu-topo {
@@ -68,32 +83,34 @@ li:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;    
+    padding: 20px;
+    
 }
 
 .banner {
-    background-image: url(../img/imagemFundo.png);
+    background-image: url(./);
     background-repeat: no-repeat;
     height: 1023px;
     background-size: cover;
-}
-
-.conteudo-banner {
+    box-shadow: 6px 6px 13px 0px rgba(20, 20, 20, 0.633);
     display: flex;
     flex-direction: column;
-    height: 1023px;
     align-items: center;
-    justify-content: center;  
+    background-attachment: fixed;
+    justify-content: center;
+
 }
 
 .conteudo-banner::after {
-    content: "";
-    z-index: 8;
-    width: 100% ;
-    height: 41%;
-    margin-top: 640px;
+    content: " ";
     position: absolute;
-    background: linear-gradient(to bottom, rgba(0,0,0,0)0, rgba(0,0,0,0) 40%, rgb(255, 255, 255) 100%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
 }
 
 .conteudo-banner h1 {
@@ -123,6 +140,10 @@ li:hover {
 
 .botao-explorar:hover {
     cursor: pointer;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s
 }
 
 .banner-cards {
@@ -144,7 +165,7 @@ li:hover {
 
 .cards {
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     margin: 20px;
@@ -164,6 +185,7 @@ li:hover {
     top: -250px;
     border-radius: 10px;
     padding: 10px;
+    width: 329px;
     height: 386px;
 }
 
@@ -172,7 +194,7 @@ li:hover {
     font-size: 15px;
     line-height: 21px;
     font-weight: 290;
-    text-align: justify ;
+    text-align: justify;
     padding: 10px;
 }
 
@@ -186,10 +208,53 @@ li:hover {
     font-size: 20px;
     border-color: #33BB69;
     border-style: none;
+    position: static;
+    letter-spacing: 2px;
 }
 
 .botao-abrir:hover {
     cursor: pointer;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 0.5s
+}
+
+
+.flix {
+    animation: animation 2s ease 0s 1 normal forwards;
+}
+
+
+
+@keyframes animation {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 /* Rodapé */
@@ -236,7 +301,7 @@ li:hover {
     display: flex;
 }
 
-.foto img {    
+.foto img {
     height: 60px;
     width: 60px;
     border-radius: 50px;
@@ -267,7 +332,7 @@ li:hover {
 }
 
 .fundo-login {
-    background-image: url(../img/imagemFundo.png);
+    background-image: url(./img/img/imagemFundo.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -275,7 +340,7 @@ li:hover {
 .login-box {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .formulario-login {
@@ -302,7 +367,7 @@ li:hover {
     height: 60px;
     background-color: #33BB69;
     color: #ffffff;
-    border: 1px solid #A4A4A4;
+    border: none;
     border-radius: 12px;
     height: 60px;
     padding: 10px;
@@ -322,44 +387,120 @@ input:hover {
 
 .movies-container {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .banner-movie img {
-  width: 80vw;
+    width: 70vw;
+    height: 35vw;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    border-radius: 20px;
 }
 
 .movies {
-    width: 1200px;
+
     text-align: justify;
+    padding: 0 200px;
 }
 
-.movies h1 {
-    font-size: 40px;
+.titulo-filme h1 {
+    font-size: 50px;
     font-weight: 900;
-    margin: 10px 0;
     text-transform: uppercase;
+    height: 60px;
 }
 
-.resumo {
-    margin: 15px 0;
-}
-
-.diretor-info {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
+.titulo-capa {
     display: flex;
-    gap: 240px;
+    flex-direction: column;
+    padding-left: 0;
+    width: 1280px;
+}
+
+.titulo-capa h1 {
+    font-size: 50px;
+    text-align: center;
+    width: 329px;
+}
+
+.titulo-capa img {
+    width: 329px;
+}
+
+div.titulo-filme {
+    height: 60px;
+}
+
+.imagens-filme {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1280px;
+    background-color: #171717;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagens-filme img {
+    width: 400px;    
+    padding: 20px;
     
 }
 
+.diretor-info {
+    
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 15px;
+    font-weight: bold;
+/*     display: flex;
+    margin-top: -40px; */
+    
+}
+
+.titulo-capa p {
+    text-align: justify;
+    padding-left: 30%;
+   /*  padding-bottom: 5%; */
+}
+
+.btn{
+    display:inline-flex;
+    justify-content: flex-end;
+    gap: 10px;        
+}
+
+.botao-filmes{
+    background-color: #030303;
+    border-color: #A4A4A4;
+    border-style: none;
+    border-radius: 5px;
+    width: 100%;
+    color: #ffffff; 
+    font-weight: bold;
+}
+
+.btn button {
+    width: 200px;
+    height: 30px;
+}
+
+.bg_video{
+    width: 90vw;  
+}
+
+
+
+.sinopse {
+    font-size: 25px;
+    margin-top: -60vh;
+}
+
 .diretor-nomes {
-    display: flex;
-    gap: 200px;
+   /*  margin-top: -55px;
+    
+    display: flex; */
     color: rgba(0, 133, 255, 0.75);
 }
 
@@ -370,31 +511,113 @@ input:hover {
     margin: 15px 0 0 0;
 }
 
-.youtube {
+#youtube {
     margin: 15px;
+    width: 1280px;
+    height: 650px;
 }
+
+#critica {
+    padding-bottom: 10px;
+    font-size: large; 
+}
+
+#critica h4 {
+    padding-bottom: 10px;
+}
+
+#img {
+    padding: 20px;
+}
+
+.nota {
+    display: flex;
+    width: 329px;
+    height: 20px;
+    background-color: #171717;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nota img{
+    width: 20px; 
+
+}
+
+.notaE {
+    display: flex;
+    gap: 2px;
+    
+}
+.notaE img {
+    width: 20px;
+    
+}
+
+#back-to-top {
+    display: flex;    
+    background-color: #E51B3E;
+    padding: 5px;
+    margin-bottom: 10px;
+    
+  }
+
+
+
+
+
 
 
 /* Responsividade */
 
-@media (max-width: 428px) {
+@media (max-width: 428px) {  
 
-    .botao {
+   
+
+   .botao {
         visibility: visible;
     }
 
     .lista-menu {
         visibility: hidden;
+        flex-direction: column;
     }
 
-    .menu-topo {
+    .menu-topo{
+        display: inline-flex;
         justify-content: space-around;
+        height: 100px; 
+        width: 100%; 
+             
     }
 
-    .banner {
-        background-image: url(./img/fundobanner.png);
+     .banner {
+        background-image: url(./img/img/fundobanner.png);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+
+    .titulo-capa {
+        width: 100%;
+    }
+
+    /* .titulo-capa p {
+        margin-top: 10%;
+
+    } */
+
+    .diretor-info {
+        padding: 0;
+        margin: 0;
+    }
+
+    #critica {
+        padding: 20px;
+    }
+
+    #img {
+        padding: 20px;
     }
 
     #rodape {
@@ -405,50 +628,175 @@ input:hover {
         gap: 25px;
     }
 
-        .conteudo-banner h1 {
-            font-weight: 900;
-            font-size: 40px;
-        }
+    .conteudo-banner h1 {
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    .conteudo-banner p {
+        font-size: 15px;
+        font-weight: 300;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .botao-explorar {
+        width: 200px;
+        height: 60px;
+    }
+
+    .login-box {
+        max-width: 80%;
+    }
+
+    .fundo-login {
+        background-image: url(./img/img/imagemFundo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagens-filme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .capa-filme {
+        width: 350px;
+        align-items: center;
+    }
+
+    .texto-capa{
+        display: block;
+        text-align: justify;
+        width: 420px;
+    }
+
+    .texto-capa .capa-filme {
+        align-items: center;
+        justify-content: center; 
+        width: 420px;
+    }
+
+    .texto-capa p {
+        text-align: justify;
+        width: 428px;
+        padding: 0 20px; 
+        margin-top: 10%; 
+    }
+
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+    
+    .area-login {
+        max-width: 80%;
+    }
+
+    .area-login img {
+        max-width: 90%;
+    }
+
+    #youtube {
+        width: 400px;
+        height: 225px;
+    }
+
+    .banner-movie img {
+        width: 80vw;
+        height: 40vw;
+        margin-top: 300px;
+        border-radius: 20px;
+    }
+
+    .movies {
+        padding: 0 50px;
+    }  
+    
+    .bg_video {
+    width: 100%;
+
+    }
+
+    .nota {
+        display: flex;
+        width: 329px;
+        height: 20px;
+        background-color: #171717;
+        margin-left: 50px;       
         
-        .conteudo-banner p {
-            font-size: 15px;
-            font-weight: 300;
-            padding: 30px;
-            text-align: center;
-        }
+    }
+    
+    .nota img{
+        width: 20px; 
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .notaE {
+        display: flex;
+        gap: 2px;
+        
+    }
+    .notaE img {
+        width: 20px;
+        
+    }
 
-        .botao-explorar {
-            width: 200px;
-            height: 60px;
-        }
 
-        .login-box {
-            max-width: 80%;
-        }
-
-        .fundo-login {
-            background-image: url(./img/fundobanner.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .area-login {
-            max-width: 80%;
-        }
-
-        .area-login img {
-            max-width: 90%;
-        }
 }
+/* ESTÁ DANDO ERRO NO RESTANTE DAS RESOLUÇÕES PRECISA SER VISTO
+@media (max-width: 688px) {
 
-@media (max-width: 688px) { 
+    
+        
 
     .lista-menu {
         flex-direction: column;
         gap: 5px;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 12vh;
+        margin-bottom: 2%;
+    }
+      
+
+    .capa-filme {
+        margin-bottom: 50%;
+        justify-content: center;
+    }
+
+    .texto-capa{
+        display: block;
+        text-align: center;
+        width: 688px;
+    }
+
+    .texto-capa p {
+        text-align: justify;
+        margin-left: -10vh; 
+        margin-bottom: 5%; 
+        width: 690px;     
+    }
+
+    .diretor-info {
+        margin-bottom: 2%;
+    }
+
+    #critica{
+    margin-bottom: 2%;
     }
 
     #rodape {
@@ -457,7 +805,7 @@ input:hover {
         justify-content: center;
         padding: 10px;
     }
-    
+
     .conteudo-banner p {
         font-size: 22px;
         font-weight: 300;
@@ -469,5 +817,26 @@ input:hover {
         width: 200px;
         height: 60px;
     }
-}
 
+    .movies {
+        padding: 0 50px;
+    }
+
+    .banner-movie img {
+        width: 80vw;
+        height: 40vw;
+        margin-top: 200px;
+        border-radius: 20px;
+    }
+
+    #youtube {
+        width: 608px;
+        height: 425px;
+    }
+
+    .imagens-filme {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+} */
