@@ -391,6 +391,14 @@ input:hover {
     flex-direction: column;
 }
 
+.movies-container video {
+    width: 100%;
+}
+
+.video-container {
+    align-self: center;
+}
+
 .banner-movie img {
     width: 70vw;
     height: 35vw;
@@ -427,6 +435,7 @@ input:hover {
 
 .titulo-capa img {
     width: 329px;
+    display: inline-block;
 }
 
 div.titulo-filme {
@@ -494,7 +503,7 @@ div.titulo-filme {
 
 .sinopse {
     font-size: 25px;
-    margin-top: -40%;
+    margin-top: -35%;
 }
 
 .diretor-nomes {
@@ -669,8 +678,7 @@ div.titulo-filme {
         align-items: center;
     }
 
-    .texto-capa{
-        display: block;
+    .texto-capa {
         text-align: justify;
         width: 420px;
     }
