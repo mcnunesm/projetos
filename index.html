@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,114 +11,162 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>MariaNunes Portfólio</title>
 </head>
+
 <body>
     <header>
-       <div id="menu">
-            <h1 class="inicio">Hi 👋,</h1>
-                <p class="autor">I'm Maria Clara Nunes</p>
-       
-
-            <img src="./img/foto-perfil.jpeg" alt="Foto Maria Clara" class="foto-perfil">
-            <p class="perfil">I'm a Dev student and these are some of the projects that I have developed</p>
-        </div>
-        
-        <div class="contatos">
-                <a href="mailto:marianunesm@hotmail.com"><img src="./img/mail-icon.png" alt="Ícone de e-mail" title="marianunesm@hotmail.com"></a>
-                <a href="https://github.com/mcnunesm" target="_blank"><img src="./img/github-icon.png" alt="Ícone do GitHub" title="@mcnunesm"></a>
-                <a href="https://www.linkedin.com/in/marianunesm/" target="_blank"><img src="./img/linkedin-icon.png" alt="Ícone do Linkedin" title="Maria Clara Nunes"></a>
-        </div>
+        <section class="menu">
+            <nav class="menu__nav">
+                <ul class="menu__nav__lista">
+                    <li><a href="#sobre-mim" class="menu__nav-li">sobre mim</a></li>
+                    <li><a href="#" class="menu__nav-li">skills</a></li>
+                    <li><a href="#" class="menu__nav-li">cursos</a></li>
+                    <li><a href="#" class="menu__nav-li">projetos</a></li>
+                    <li><a href="#" class="menu__nav-li">contato</a></li>
+                </ul>
+            </nav>
+        </section>
     </header>
-
     <main>
-        <div class="titulo-sessao">
-            <h1>Projetos</h1>
-        </div>
-        <div id="projetos">
-            <section>
-                <h1 class="titulo-projeto">HTML+CSS</h1>
-                <a href="https://mcnunesm.github.io/projetos/front-end/Aula08/aula08.html">  
+
+        <section id="sobre-mim" class="sobre__mim">
+            <img src="./img/foto-perfil.jpeg" alt="Foto Maria Clara" class="sobre__mim-img">
+            <div class="sobre__mim__texto">
+                <h1 class="sobre__mim__texto-ola">Olá 👋,</h1>
+                <p class="sobre__mim__texto-autor">meu nome é Maria Clara Nunes</p>
+                <p class="sobre__mim__texto-bio">Aspirante à carreira de desenvolvimento e programação, <br>apaixonada
+                    por design, em transição de carreira.</p>
+                <img class="assinatura-img" src="./img/logoassinatura.png" alt="">
+            </div>
+        </section>
+
+        <section class="sobre__mim__redes">
+            <a href="mailto:marianunesm@hotmail.com"><img src="./img/mail-icon.png" alt="Ícone de e-mail"
+                    title="marianunesm@hotmail.com"></a>
+            <a href="https://github.com/mcnunesm" target="_blank"><img src="./img/github-icon.png" alt="Ícone do GitHub"
+                    title="@mcnunesm"></a>
+            <a href="https://www.linkedin.com/in/marianunesm/" target="_blank"><img src="./img/linkedin-icon.png"
+                    alt="Ícone do Linkedin" title="Maria Clara Nunes"></a>
+        </section>
+
+        <section class="skills">
+            <h1 class="titulo__sessoes">Skills</h1>
+            <article class="skills__box">
+                <img src="./img/html5.png" alt="Ícone HTML5" class="skills-img">
+                <p>Html 5</p>
+            </article>
+            <article class="skils-box">
+                <img src="./img/css3.png" alt="Ícone CSS3" class="skills-img">
+                <p>Css 3</p>
+            </article>
+            <article class="skils-box">
+                <img src="./img/javascript.png" alt="Ícone JavaScript" class="skills-img">
+                <p>JavaScript</p>
+            </article>
+        </section>
+
+        <section id="projetos">
+            <h1 class="titulo__sessoes">Projetos</h1>
+            <div class="projetos__individuais">
+                <article class="projetos__individuais-box">
+                    <h2 class="titulo-projeto">HTML+CSS</h2>
+                    <a href="https://mcnunesm.github.io/projetos/front-end/Aula08/aula08.html">
                         <img src="./img/projeto1.png" class="foto-projeto" onmouseover="this.
-                        src='./img/look.png'" onmouseout="this.
-                        src='./img/projeto1.png'"></a>
-                <p class="sobre-projeto">Review de um filme HTML + CSS - aula Front End CTD.</p>
-            </section>
-            <section>
-                <h1 class="titulo-projeto">HTML+CSS</h1>
-                <a href="https://mcnunesm.github.io/projetos/front-end/Aula10/aula10.html">
+                            src='./img/look.png'" onmouseout="this.
+                            src='./img/projeto1.png'"></a>
+                    <p class="sobre-projeto">Review de um filme HTML + CSS - aula Front End CTD.</p>
+                </article>
+                <article class="projetos__individuais-box">
+                    <h2 class="titulo-projeto">HTML+CSS</h2>
+                    <a href="https://mcnunesm.github.io/projetos/front-end/Aula10/aula10.html">
                         <img src="./img/projeto2.png" class="foto-projeto" onmouseover="this.
-                        src='./img/look.png'" onmouseout="this.
-                        src='./img/projeto2.png'"></a>
-                <p class="sobre-projeto">Super heróis HTML + CSS - aula Front End CTD.</p>
-            </section>
-            <section>
-                <h1 class="titulo-projeto">HTML+CSS</h1>
+                            src='./img/look.png'" onmouseout="this.
+                            src='./img/projeto2.png'"></a>
+                    <p class="sobre-projeto">Super heróis HTML + CSS - aula Front End CTD.</p>
+                </article>
+                <article class="projetos__individuais-box">
+                    <h2 class="titulo-projeto">HTML+CSS</h2>
                     <a href="https://mcnunesm.github.io/projetos/front-end/Aula11/aula11.html">
-                       <img src="./img/projeto3.png" class="foto-projeto" onmouseover="this.
-                        src='./img/look.png'" onmouseout="this.
-                        src='./img/projeto3.png'"></a>
-                <p class="sobre-projeto">Mortal Kombat curiosidades HTML + CSS - aula Front End CTD.</p>
-            </section>
+                        <img src="./img/projeto3.png" class="foto-projeto" onmouseover="this.
+                            src='./img/look.png'" onmouseout="this.
+                            src='./img/projeto3.png'"></a>
+                    <p class="sobre-projeto">Mortal Kombat curiosidades HTML + CSS - aula Front End CTD.</p>
+                </article>
 
-            <section>
-                <h1 class="titulo-projeto">HTML+CSS</h1>
+                <article class="projetos__individuais-box">
+                    <h2 class="titulo-projeto">HTML+CSS</h2>
                     <a href="./front-end/Aula12/aula12.html">
-                       <img src="./img/dhflix.png" class="foto-projeto" onmouseover="this.
-                        src='./img/look.png'" onmouseout="this.
-                        src='./img/dhflix.png'"></a>
-                <p class="sobre-projeto">DH Flix reprodução de uma página de filmes.</p>
-            </section>
+                        <img src="./img/dhflix.png" class="foto-projeto" onmouseover="this.
+                            src='./img/look.png'" onmouseout="this.
+                            src='./img/dhflix.png'"></a>
+                    <p class="sobre-projeto">DH Flix reprodução de uma página de filmes.</p>
+                </article>
 
-            <section>
-                <h1 class="titulo-projeto">HTML+CSS+JAVASCRIPT</h1>
+                <article class="projetos__individuais-box">
+                    <h2 class="titulo-projeto">HTML+CSS+JAVASCRIPT</h2>
                     <a href="https://mcnunesm.github.io/decodifica/">
-                       <img src="./img/projeto4.PNG" class="foto-projeto" onmouseover="this.
-                        src='./img/look.png'" onmouseout="this.
-                        src='./img/projeto4.PNG'"></a>
-                <p class="sobre-projeto">Decodificador de Texto.</p>
-            </section>
-            
-        </div>
+                        <img src="./img/projeto4.PNG" class="foto-projeto" onmouseover="this.
+                            src='./img/look.png'" onmouseout="this.
+                            src='./img/projeto4.PNG'"></a>
+                    <p class="sobre-projeto">Decodificador de Texto.</p>
+                </article>
+            </div>
 
-        <div class="titulo-sessao">
-            <h1>Formação</h1>
-        </div>
-        <div class="cursos">
-            <section>
-                <h1 class="titulo-curso">Certified Tech Developer</h1>
-                <p class="sobre-curso">in <a href="https://www.digitalhouse.com/br">Digital House</a> <em>em formação</em>.</p>
-                <img src="./img/logo-ctd.png" alt="Logo Digital House" class="logo-dh">
-            </section>
-            <section>
-                <h1 class="titulo-curso"><a href="./arquivos/discover-conectar-certificate.pdf" target="_blank">Trilha Conectar</a></h1>
-                <p class="sobre-curso">do Discover in <a href="https://www.rocketseat.com.br/">Rocketseat</a>.</p>
-                <img src="./img/logo_rocketseat.png" alt="Logo Rocketseat" class="logo-rocketseat">
-            </section>
-            <section>
-                <h1 class="titulo-curso">Trilha Fundamentar</h1>
-                <p class="sobre-curso">do Discover in <a href="https://www.rocketseat.com.br/">Rocketseat</a> <em>em formação</em>.</p>
-                <img src="./img/logo_rocketseat.png" alt="Logo Rocketseat" class="logo-rocketseat">
-            </section>
-            <section>
-                <h1 class="titulo-curso"><a href="./arquivos/courseraJ27GV8LK3FMV.pdf" target="_blank">Introduction to Front-End Development</a></h1>
-                <p class="sobre-curso">in <a href="https://www.coursera.org/">Coursera</a>.</p>
-                <img src="./img/coursera.svg" alt="Logo Coursera" class="logo-coursera">
-            </section>
-            <section>
-                <h1 class="titulo-curso">Bootcamp Embraer Social Tech Careers 2022</h1>
-                <p class="sobre-curso">in <a href="https://www.xpeducacao.com.br/bootcamp/embraer-social-tech-careers/">XP Educação</a> <em>em formação</em>.</p>
-                <img src="./img/logo_xpE.png" alt="Logo XP  Educação" class="logo-xp">
-            </section>
-        </div>
+        </section>
+
+        <section class="cursos">
+            <h1 class="titulo__sessoes">Formação</h1>
+            <div class="cursos__container">
+                <article class="cursos__container-box">
+                    <h3 class="titulo-curso">Certified Tech Developer</h3>
+                    <p class="sobre-curso">in <a href="https://www.digitalhouse.com/br">Digital House</a> <em>em
+                            formação</em>.</p>
+                    <img src="./img/logo-ctd.png" alt="Logo Digital House" class="logo-dh">
+                </article>
+                <article class="cursos__container-box">
+                    <h3 class="titulo-curso"><a href="./arquivos/discover-conectar-certificate.pdf" target="_blank">Trilha
+                            Conectar</a></h3>
+                    <p class="sobre-curso">do Discover in <a href="https://www.rocketseat.com.br/">Rocketseat</a>.</p>
+                    <img src="./img/logo_rocketseat.png" alt="Logo Rocketseat" class="logo-rocketseat">
+                </article>
+                <article class="cursos__container-box">
+                    <h3 class="titulo-curso">Trilha Fundamentar</h3>
+                    <p class="sobre-curso">do Discover in <a href="https://www.rocketseat.com.br/">Rocketseat</a> <em>em
+                            formação</em>.</p>
+                    <img src="./img/logo_rocketseat.png" alt="Logo Rocketseat" class="logo-rocketseat">
+                </article>
+                <article class="cursos__container-box">
+                    <h3 class="titulo-curso"><a href="./arquivos/courseraJ27GV8LK3FMV.pdf" target="_blank">Introduction to
+                            Front-End Development</a></h3>
+                    <p class="sobre-curso">in <a href="https://www.coursera.org/">Coursera</a>.</p>
+                    <img src="./img/coursera.svg" alt="Logo Coursera" class="logo-coursera">
+                </article>
+                <article class="cursos__container-box">
+                    <h3 class="titulo-curso">Bootcamp Embraer Social Tech Careers 2022</h3>
+                    <p class="sobre-curso">in <a
+                            href="https://www.xpeducacao.com.br/bootcamp/embraer-social-tech-careers/">XP Educação</a>
+                        <em>em formação</em>.
+                    </p>
+                    <img src="./img/logo_xpE.png" alt="Logo XP  Educação" class="logo-xp">
+                </article>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div class="contatos">
-            <a href="mailto:marianunesm@hotmail.com"><img src="./img/mail-icon.png" alt="Ícone de e-mail" title="marianunesm@hotmail.com"></a>
-            <a href="https://github.com/mcnunesm" target="_blank"><img src="./img/github-icon.png" alt="Ícone do GitHub" title="@mcnunesm"></a>
-            <a href="https://www.linkedin.com/in/marianunesm/" target="_blank"><img src="./img/linkedin-icon.png" alt="Ícone do Linkedin" title="Maria Clara Nunes"></a>
-    </div>
-        </footer>
-    
-    
+        <section class="contatos">
+            <div class="redes-sociais">
+                <a href="mailto:marianunesm@hotmail.com"><img src="./img/mail-icon.png" alt="Ícone de e-mail"
+                        title="marianunesm@hotmail.com"></a>
+                <a href="https://github.com/mcnunesm" target="_blank"><img src="./img/github-icon.png"
+                        alt="Ícone do GitHub" title="@mcnunesm"></a>
+                <a href="https://www.linkedin.com/in/marianunesm/" target="_blank"><img src="./img/linkedin-icon.png"
+                        alt="Ícone do Linkedin" title="Maria Clara Nunes"></a>
+            </div>
+            <p>desenvolvido por Maria Clara Nunes</p>
+        </section>
+    </footer>
+
+
 </body>
+
 </html>
