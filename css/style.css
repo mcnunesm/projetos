@@ -31,6 +31,7 @@ a:link {
 .menu__nav-li {
     transition: all linear 1s;
     color: #033270;
+    font-size: 1rem;
 }
 
 .menu__nav__lista {
@@ -100,60 +101,140 @@ display: block;
 
 .titulo__sessoes {
     text-align: center;
-    margin: 5rem 0 0.5rem 0;
+    margin: 2.5rem 0;
     color: rgba(0, 0, 0, 0.834);
     text-emphasis: 'x' #033270;
     font-size: 1.5rem;
+    padding-top: 0.5rem;
 }
 
-.skills {
-    
+.skills__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills__container-box {
+    background-color: rgba(242, 148, 121, 0.2);
+    width: 174px;
+    height: 176px;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.skills-img {
+    width: 36px;
+    padding-bottom: 0.5rem;
 }
 
 .projetos__individuais {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 .projetos__individuais-box {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgba(242, 148, 121, 0.2);
 }
 
-.titulo-projeto {
-    font-size: 15px;
+.projetos__individuais-box-titulo {
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
 }
 
 .foto-projeto {
-    /* border-radius: 2.5%;
-    overflow: hidden; */
-    height: 300px;
+    border-radius: 5px;
+    /*overflow: hidden; */
     width: 300px;
+    opacity: 1;
+    transition: opacity 1s linear 0s;
 }
 
-.sobre-projeto {
-    font-size: 14px;
+.foto-projeto:hover {
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+.projetos__individuais-texto {
+    font-size: 0.9rem;
     width: 300px;
-    height: 50%;
+    padding-bottom: 0.8rem;
+}
+
+.projetos__individuais-box-btn {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #ef3d2d96;
+}
+
+.projetos__individuais-box-btn a {
+    color: #000000;
+}
+
+.cursos {
+    background-color: rgba(157, 206, 226, 0.2);
 }
 
 .cursos__container {
     display: flex;
     justify-content: center;
-    flex-flow: wrap row;
-    gap: 20px;   
+    flex-wrap: wrap;
+    padding: 4rem;
 }
 
 .cursos__container-box {
     width: 300px;
     text-align: center;
-    background-color: rgba(137, 43, 226, 0.09);
+    background-color: #ffffff;
     padding: 10px;
     margin: 0.5rem;
 }
 
+.titulo-curso {
+    font-size: 1.1rem;
+}
+
 .cursos__container p {
-    font-size: 1rem;
+    font-size: 0.9rem;
+}
+
+.contato {
+    background-color: rgba(157, 206, 226, 0.2);
+}
+
+.contato__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato__img {
+    width: 300px;
+    min-width: 100px;
+    margin: 1rem;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin: 1rem;
 }
 
 .logo-dh, .logo-rocketseat, .logo-coursera  {
@@ -165,18 +246,18 @@ display: block;
     width: 100px;
 }
 
-.contatos {
+.redes-sociais {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5rem 0 1rem 0;
 }
 
-.contatos img {
+.redes-sociais img {
     height: 28px;
 }
 
-.contatos p {
+.redes-sociais p {
     font-size: 0.8rem;
 }
 
@@ -188,7 +269,7 @@ display: block;
     .sobre__mim {
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 2rem;
+        padding-bottom: 2rem;
     }
 
     .sobre__mim__texto {
@@ -196,7 +277,11 @@ display: block;
     }
 
     .sobre__mim__redes {
-        margin-top: 3.5rem;
+        padding-top: 3.5rem;
+    }
+
+    .skills__container {
+        align-items: center;
     }
 
     #projetos {
@@ -205,8 +290,7 @@ display: block;
     }
 
     .cursos__container {
-        flex-direction: column;
-        align-items: center;
+        padding: 0.5rem;
     }
     
 }
