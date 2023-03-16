@@ -193,9 +193,9 @@ display: block;
 
 .cursos__container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    padding: 4rem;
+    padding: 0 4rem 2rem 4rem;
 }
 
 .cursos__container-box {
@@ -224,8 +224,13 @@ display: block;
     align-items: center;
 }
 
+.contato__formulario p {
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
 .contato__img {
-    width: 300px;
+    width: 350px;
     min-width: 100px;
     margin: 1rem;
 }
@@ -235,6 +240,44 @@ display: block;
     flex-direction: column;
     background-color: #ffffff;
     margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.input-label {
+    font-size: 0.9rem;
+    color: #424141;
+    padding: 0.3rem;
+}
+
+.input {
+    border: 0 none;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    outline: 0;
+    border-bottom: 2px groove #42414148;
+}
+
+.input:focus {
+    border-bottom: 2px groove #EF3C2D;
+}
+
+.input-container span {
+    display: none;
+}
+
+.formulario__btn {
+    margin: 1rem;
+    padding: 0.7rem;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ef3d2d96;
+    cursor: pointer;
+}
+
+#mensagem {
+    resize: none;
 }
 
 .logo-dh, .logo-rocketseat, .logo-coursera  {
@@ -291,6 +334,10 @@ display: block;
 
     .cursos__container {
         padding: 0.5rem;
+        justify-content: center;
     }
     
+    .contato__container {
+        flex-direction: column;
+    }
 }
