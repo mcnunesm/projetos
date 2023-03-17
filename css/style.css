@@ -262,8 +262,11 @@ display: block;
     border-bottom: 2px groove #EF3C2D;
 }
 
-.input-container span {
+.input-mensagem-erro {
     display: none;
+    color: red;
+    font-size: 0.8rem;
+    padding: 0.5rem;
 }
 
 .formulario__btn {
