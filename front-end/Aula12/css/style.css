@@ -581,9 +581,6 @@ div.titulo-filme {
 /* Responsividade */
 
 @media (max-width: 428px) {  
-
-   
-
    .botao {
         visibility: visible;
     }
